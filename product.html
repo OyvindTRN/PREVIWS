@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h2 id="logo">Merch</h2>
+        <nav>
+            <ul id="nav">
+                <li><a href="cart.html"><img src="iconcart.svg" height="25px"></a></li>
+                <li><a href="product.html"><img src="threelines.svg" height="25px"></a></li>
+                <li><a href="index.html"><img src="iconhome.svg" height="25px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2><a href="cart.html">Handlevogn lenke</a></h2>
+            <table border=0 id="navtable">
+                <tbody>
+                    <tr><td><a href="./product.html">Genser</a></td></tr>
+                    <tr><td><a href="./product.html">Genser</a></td></tr>
+                    <tr><td><a href="./product.html">Genser</a></td></tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <div class="wrapper">
+            <div class="bilder">
+                <img style="width: 280px;" src="genser.jpg">
+            </div>
+            <div class="bilder">
+                <h2>Genser 1000,-</h2>
+                <p>Dette er en genser</p>
+                <form id="productform">
+                    <label for="product">Størrelse</label>
+                    <select name="product" class="button">
+                        <option value="1" selected>Liten</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Stor</option>
+                    </select>
+                    <br>
+                    <label for="antall">Antall</label>
+                    <input type="number" name="antall" size="5" min="0" max="10" step="1" value="1" class="button">
+                    <br>
+                    <label for="pris">Pris</label>
+                    <input type="number" name="pris" value="100" readonly class="button">
+                </form>
+                <br>
+                <div id="button">
+                    <input id="leggTil" type="submit" value="Legg til i handlevogn" />
+                </div>
+            </div>
+        </div>
+        <div class="detaljer">
+            <h1>Detaljer</h1>
+            <div id="detailspar">
+                <p>Hunter × Hunter (stylized as HUNTER×HUNTER and pronounced "hunter hunter"[3]) is a Japanese manga series written and illustrated by Yoshihiro Togashi. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since March 1998, although the manga has frequently gone on extended hiatuses since 2006. Its chapters have been collected in 37 tankōbon volumes as of November 2022. The story focuses on a young boy named Gon Freecss who discovers that his father, who left him at a young age, is actually a world-renowned Hunter, a licensed professional who specializes in fantastical pursuits such as locating rare or unidentified animal species, treasure hunting, surveying unexplored enclaves, or hunting down lawless individuals. Gon departs on a journey to become a Hunter and eventually find his father. Along the way, Gon meets various other Hunters and encounters the paranormal.</p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+    </main>
+
+    <footer>
+        <p>Kontakt person: Øyvind Tran - </p>
+        <p>Email: o.tran@stud.uis.no</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h2 id="logo">Merch</h2>
+        <nav>
+            <ul id="nav">
+                <li><a href="cart.html"><img src="iconcart.svg" height="25px"></a></li>
+                <li><a href="product.html"><img src="threelines.svg" height="25px"></a></li>
+                <li><a href="index.html"><img src="iconhome.svg" height="25px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cartsubhead">
+            <h1>Handlevogn</h1>
+        </div>
+        <table id="carttable" style="width: 100%">
+            <tr>
+                <th>Produkt</th>
+                <th>Størrelse</th>
+                <th>Antall</th>
+                <th>Vare pris</th>
+                <th>Avslag</th>
+                <th>Totalt</th>
+                <th>Avbryt</th>
+            </tr>
+            <tr>
+                <td>HxH Genser</td>
+                <td>Small</td>
+                <td>5</td>
+                <td>1000,-</td>
+                <td></td>
+                <td>5000,-</td>
+                <td><input id="avbryt" type="submit" value="avbryt" /></td>
+            </tr>
+            <tr>
+                <td>HxH Genser</td>
+                <td>Medium</td>
+                <td>3</td>
+                <td>1000,-</td>
+                <td>18%</td>
+                <td>2460,-</td>
+                <td><input id="avbryt" type="submit" value="avbryt" /></td>
+            </tr>
+            <tr>
+                <td>HxH Genser</td>
+                <td>Large</td>
+                <td>0</td>
+                <td>1000,-</td>
+                <td></td>
+                <td>0,-</td>
+                <td><input id="avbryt" type="submit" value="avbryt" /></td>
+
+            </tr>
+        </table>
+        <div class="cartsubhead">
+            <h1>Sjekk ut</h1>
+        </div>
+        <form class="cartform">
+            <fieldset class="details">
+                <legend>Detaljer:</legend>
+                <label for="firstname">Fornavn</label>
+                <input type="text" name="firstname" id="firstname" value="" size="20" />
+                <br />
+                <label for="lastname">Etternavn</label>
+                <input type="text" name="lastname" id="lastname" value="" size="20" />
+                <br />
+                <label for="email">Mail</label>
+                <input type="email" name="email" id="email" value="" size="20" />
+                <br />
+            </fieldset>
+            <fieldset class="Delivery">
+                <legend>Addressess:</legend>
+                <label for="street">Street</label>
+                <input type="street" name="street" id="street" value="" size="20" />
+                <br />
+                <label for="city">By</label>
+                <input type="city" name="city" id="city" value="" size="20" />
+                <br />
+                <label for="Postal Code">Postkode</label>
+                <input type="Postal Code" name="Postal Code" id="Postal Code" value="" size="20" />
+                <br />
+            </fieldset>
+            <fieldset class="submitorder">
+                <legend>Verifiser ordre:</legend>
+
+                <div id="button">
+                    <input type="radio" name="accept" value="accepted" /> Ikke-robot
+                    <input id="addbutton" type="submit" value="submit" />
+
+                </div>
+            </fieldset>
+        </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </main>
+    <footer>
+        <p>Kontakt person: Øyvind Tran - </p>
+        <p>Email: o.tran@stud.uis.no</p>
+    </footer>
+</body>
